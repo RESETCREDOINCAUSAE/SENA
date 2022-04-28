@@ -1,0 +1,200 @@
+/*SISTEMA DE GRID  */
+
+body{
+    background-color: aquamarine;
+    height: 3300px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 120px 120px 120px 120px 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "navbarra navbarra navbarra"
+    "boostraps boostraps boostraps"
+    "boostraps boostraps boostraps"
+    "boostraps boostraps boostraps"
+    "boostraps boostraps boostraps "
+    "portafolio portafolio portafolio"
+    "portafolio portafolio portafolio"
+    "portafolio portafolio portafolio"
+    "portafolio portafolio portafolio"
+  "about about about "
+  "about about about"
+  "about about about"
+  "about about about"
+  "contact contact contact"
+  "contact contact contact"
+  "contact contact contact"
+  "contact contact contact"
+    "footers footers footers"
+     ;
+     
+    
+}
+@media (max-width: 600px) {
+    
+    .estrellas{
+        display: none !important;
+    }
+    button{
+        width: 100% !important;
+    }
+    body {
+      height: 5000px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: 200px 600px 2400px 800px 800px 200px;
+      grid-template-areas: 
+      "navbarra navbarra navbarra"
+      "boostraps boostraps boostraps"
+      "portafolio portafolio portafolio"  
+    "about about about "
+    "contact contact contact"
+      "footers footers footers"
+       ;
+       
+    }
+    #navbars  {
+font-size: smaller;
+        width: 100%;
+        height: 200px !important;
+        background-color: rgb(38, 38, 57);
+        grid-area: navbarra;
+        font-family: "Monserrat";
+        
+        
+    }
+    /* 2 SECCION : PORTAFOLIO */
+    #boostraps {
+        font-family: "Monserrat";
+        width: 100%;
+        height: 600px;
+        background-color: rgb(25, 194, 165);
+        grid-area: boostraps;
+        
+    }
+    #portafolio{
+        font-family: "Monserrat";
+        width: 100%;
+        height: 2600px;
+        background-color: rgb(246, 246, 246);
+        grid-area: portafolio ;
+       
+    }
+    
+    #about{
+        font-family: "Monserrat";
+        width: 100%;
+        height: 900px;
+        background-color: aqua;
+        grid-area: about ;
+    }
+    #contact{
+      
+        width: 100%;
+       font-family: "Monserrat";
+        height: 900px;
+       
+        background-color: white;
+        grid-area: contact ;
+    }
+    #footer{
+        font-family: "Monserrat";
+        width: 100%;
+        height: 200px;
+       color: white;
+        background-color: rgb(79, 67, 67);
+        grid-area: footers ;
+    }
+  }
+
+
+section{
+    padding: 1%;
+    margin: none
+    ;
+    display: flexbox !important;
+}
+/*COMPONENTES*/
+/* 1 SECCIÓN DE BARRA DE NAVEGACIÓN */
+#navbars  {
+
+    width: 100%;
+    height: 100px;
+    background-color: rgb(38, 38, 57);
+    grid-area: navbarra;
+    font-family: "Monserrat";
+    
+    
+}
+/* 2 SECCION : PORTAFOLIO */
+#boostraps {
+    font-family: "Monserrat";
+    width: 100%;
+    height: 4fr;
+    background-color: rgb(25, 194, 165);
+    grid-area: boostraps;
+    
+}
+#portafolio{
+    font-family: "Monserrat";
+    width: 100%;
+    height: 4fr;
+    background-color: rgb(246, 246, 246);
+    grid-area: portafolio ;
+    display: flexbox;
+}
+
+#about{
+    font-family: "Monserrat";
+    width: 100%;
+    height: 480px;
+    background-color: aqua;
+    grid-area: about ;
+}
+#contact{
+  
+    width: 100%;
+   font-family: "Monserrat";
+    height: 4fr;
+   
+    background-color: white;
+    grid-area: contact ;
+}
+#footer{
+    font-family: "Monserrat";
+    width: 100%;
+    height: 1fr;
+   color: white;
+    background-color: rgb(79, 67, 67);
+    grid-area: footers ;
+}
+a{
+text-decoration: none !important;
+color: white !important;
+font-size: medium;
+}
+
+span{
+    color: white;
+    font-size: 28px;
+}
+#span2{
+    color: black !important;
+    font-size: 28px;
+}
+.button{
+    text-align: center;
+}
+#avatars{
+    position: absolute !important;
+}
+#titulo{
+    color: white ;
+}
+#finish{
+    text-align: center !important;
+    color: white !important;
+}
+#boton:hover{
+    background: light ;
+
+}
